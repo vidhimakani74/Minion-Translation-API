@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>banana speak</title>
-    
+
     <style>
-        body {
-    margin: 0;
-    font-size: 1.2em;
-  }
-        textarea {
+      body {
+        margin: 0;
+        font-family: "Edu VIC WA NT Beginner", cursive;
+        text-align: center;
+        font-size: 1.2em;
+      }
+      h1 {
+        text-align: center;
+        background-color: #f5e050;
+        margin: 0;
+        padding: 20px 0;
+        font-size: 2em;
+      }
+
+      section {
+        text-align: center;
+      }
+      textarea {
     display: inline-block;
     width: 30%;
     margin: 30px auto;
@@ -21,27 +34,71 @@
     font-size: 1.5rem;
     font-family: inherit;
   }
+      button {
+        display: inline-block;
+        margin: 20px auto;
+        background-color: #f5e050;
+        border: 3px solid skyblue;
+        margin: 1rem 0rem;
+        padding: 1rem 2rem;
+        font-size: large;
+      }
 
-  #output {
-    display: inline-block;
-    width: 30%;
-    height: 20vh;
-    border: 1px solid black;
-    margin: 1rem;
-    padding: 1rem;
-    text-align: left;
-    font-size: 1.5rem;
-  }
+      #output {
+        display: inline-block;
+        width: 30%;
+        height: 20vh;
+        border: 1px solid black;
+        margin: 1rem;
+        padding: 1rem;
+        text-align: left;
+        font-size: 1.5rem;
+      }
+      /* footer */
+      footer {
+        background-color: #f5e050;
+        text-align: center;
+        box-sizing: border-box;
+      }
+
+      #footer-div {
+        display: inline-block;
+        text-align: center;
+        box-sizing: border-box;
+        width: 30%;
+      }
+
+      .footer-heading {
+        padding: 10px 0;
+      }
+
+      .output-font {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <h1>banana talk </h1>
-    <textarea id="txt-input"></textarea>
-    <button id="btn-translate">translate</button>
-
-    <div>output 👇</div>
-    <div id="output"></div>
-    <script src="app.js" type="text/javascript"></script>
-</body>
+  <body>
+    <section>
+      <h1>banana talk</h1>
+      <p class="output-font">Input 👇</p>
+      <textarea id="txt-input" placeholder="Enter your text"></textarea>
+      <button id="btn-translate">Translate</button>
+      <p class="output-font">Output 👇</p>
+      <!-- <div>output 👇</div> -->
+      <div id="output"></div>
+      <script src="app.js" type="text/javascript"></script>
+    </section>
+    <footer>
+      <div id="footer-div">
+        <h1 class="footer-heading">About</h1>
+        <p>
+          Are you a fan of minions? Did you know that the gibberish they say is
+          an actual language. Use the translator to convert your text from
+          English to Minion speak or Banana language.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
