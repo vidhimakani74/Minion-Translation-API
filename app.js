@@ -38,4 +38,4 @@ function clickHandler() {
     })
     .catch(errorHandler);
 }
-btntranslate.addEventListener("click", clickHandler);
+btntranslate.addEventListener("click", clickHandler);  
